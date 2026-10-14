@@ -21,7 +21,7 @@ function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
   if (!toggleBtn) return;
 
-  const savedTheme = localStorage.getItem('nb_theme') || 'dark';
+  const savedTheme = localStorage.getItem('nb_theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   toggleBtn.addEventListener('click', () => {
@@ -105,7 +105,7 @@ function initCanvas() {
     draw(theme) {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = theme === 'light' ? 'rgba(59, 130, 246, 0.4)' : 'rgba(6, 182, 212, 0.5)';
+      ctx.fillStyle = theme === 'light' ? 'rgba(225, 29, 72, 0.45)' : 'rgba(244, 63, 94, 0.55)';
       ctx.fill();
     }
   }
@@ -133,7 +133,7 @@ function initCanvas() {
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
           const alpha = (1 - dist / 120) * 0.18;
-          ctx.strokeStyle = theme === 'light' ? `rgba(59, 130, 246, ${alpha})` : `rgba(6, 182, 212, ${alpha})`;
+          ctx.strokeStyle = theme === 'light' ? `rgba(225, 29, 72, ${alpha})` : `rgba(244, 63, 94, ${alpha})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
