@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipl.-Ing. Nils Bauch | Embedded Software Architekt & AI / Data Specialist</title>
+  
+  <meta name="description" content="Offizielle Landing Page von Dipl.-Ing. (FH) Nils Bauch – Senior Embedded Software Architekt mit 24+ Jahren Automotive-Erfahrung (Continental, Aumovio), Inhaber von 5 Patenten und zertifizierter AI- & Data-Engineering-Spezialist.">
+  <meta name="author" content="Nils Bauch">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dipl.-Ing. Nils Bauch | Embedded Software Architekt & AI / Data Specialist">
+  <meta property="og:description" content="24+ Jahre Automotive- & Embedded-Systemarchitektur, 5 erteilte Patente, PikeOS Hypervisor Experte und zertifizierter Data & AI Engineer.">
+  <meta property="og:image" content="./assets/img/nils-bauch.png">
+  <meta property="og:url" content="https://nilsbauch.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Interactive Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-nav" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Nils Bauch Startseite">
+        <div class="brand-monogram">NB</div>
+        <div class="brand-text">
+          <span class="brand-name">Nils Bauch</span>
+          <span class="brand-tag">Embedded Software Architekt</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">Über mich</a></li>
+          <li><a href="#patente" class="nav-link">Patente</a></li>
+          <li><a href="#projekte" class="nav-link">Projekte & GitHub</a></li>
+          <li><a href="#skills" class="nav-link">Kompetenzen</a></li>
+          <li><a href="#werdegang" class="nav-link">Werdegang</a></li>
+          <li><a href="#zertifikate" class="nav-link">Zertifikate</a></li>
+          <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Design Farbschema umschalten">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="theme-icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Direct Contact Link Button -->
+        <a href="#kontakt" class="btn btn-primary btn-sm" id="nav-cta-btn">Kontakt</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="status-pill">
+              <span class="pulse-dot"></span>
+              Offen für neue architektonische Herausforderungen
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Dipl.-Ing. (FH)<br>
+            <span class="gradient-text">Nils Bauch</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Senior Embedded Software Architekt &bull; KI & Data Specialist
+          </p>
+
+          <p class="hero-description">
+            Über <strong>24 Jahre Praxiserfahrung</strong> in zukunftsweisender Automotive- & Embedded-Systemarchitektur 
+            (Continental Automotive, Siemens VDO, Aumovio). Ernannt zum Experten für Hypervisor-Architektur (PikeOS), 
+            Inhaber von <strong>5 erteilten Patenten</strong> (V2X & IT-Sicherheit) und zertifizierter Spezialist für 
+            <strong>Data Engineering & Machine/Deep Learning</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#patente" class="btn btn-primary" id="hero-btn-patente">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              5 Patente ansehen
+            </a>
+
+            <a href="#projekte" class="btn btn-secondary" id="hero-btn-repos">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub Repositories
+            </a>
+
+            <a href="#kontakt" class="btn btn-secondary" id="hero-btn-contact">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Kontakt
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Visual Card -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-glow-ring"></div>
+            
+            <!-- Top Right Floating Badge -->
+            <div class="floating-badge badge-top-right">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>5 Erteilte Patente</span>
+            </div>
+
+            <!-- Profile Image Card -->
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="./assets/img/nils-bauch.png" alt="Dipl.-Ing. (FH) Nils Bauch" class="profile-image" loading="eager">
+              </div>
+              <div class="profile-meta-bar">
+                <div class="profile-meta-name">Dipl.-Ing. (FH) Nils Bauch</div>
+                <div class="profile-meta-role">Idstein (Rhein-Main) &bull; Remote / Hybrid</div>
+              </div>
+            </div>
+
+            <!-- Bottom Left Floating Badge -->
+            <div class="floating-badge badge-bottom-left">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>24+ Jahre Automotive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS SECTION -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="24" data-suffix="+">24+</div>
+            <div class="stat-label">Jahre Praxiserfahrung</div>
+            <div class="stat-desc">Continental, Siemens VDO, Aumovio</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-suffix="">5</div>
+            <div class="stat-label">Erteilte Patente</div>
+            <div class="stat-desc">V2X, Security, Gateway & Timing</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-suffix="">5</div>
+            <div class="stat-label">Erfolgreiche Serienanläufe</div>
+            <div class="stat-desc">Mercedes-Benz, Volkswagen, Ford, FIAT</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="4" data-suffix="x">4x</div>
+            <div class="stat-label">alfatraining Auszeichnungen</div>
+            <div class="stat-desc">Data Engineering, ML, DL, SQL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="skills-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Profil & Werdegang</span>
+          <h2 class="section-title">Architekturkompetenz mit <span class="gradient-text">Tiefgang</span></h2>
+          <p class="section-desc">
+            Als Diplom-Ingenieur für Elektrotechnik und Nachrichtentechnik verbinde ich fundiertes hardwarenahes 
+            Systemverständnis mit moderner Softwarearchitektur, Hypervisor-Sicherheit und aktuellen Methoden des 
+            Data & Machine Learning Engineerings.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Embedded & Systemarchitektur</h3>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>IBM Rhapsody & SysML</strong> (Harmony Methode)</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>AUTOSAR</strong> Konfigurationsdaten (ARXML)</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>DoorsNG & Traceability</strong> von Anforderung bis Code</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Model-To-Model Transformatoren (Rhapsody nach YAML)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Hypervisor & RTOS</h3>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>PikeOS Hypervisor</strong> Experte (Ernannt 2019)</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>OSEK RTOS & Embedded Linux</strong> Systeme</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Inter-OS Kommunikation (Posix, AUTOSAR, Native)</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Cybersecurity <strong>TARA</strong> & Software <strong>FMEA</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Data Engineering & DWH</h3>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Data Warehousing</strong>: Star, Snowflake & Galaxy Schemas</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Data Vault 2.0</strong> (Hubs, Links, Satellites)</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>ETL Pipelines</strong>: Cleansing, Validation, Hashverfahren</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>SQL & RDBMS</strong>: Normalformen BCNF, Transaktionen, SSMS</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-icon-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Machine & Deep Learning</h3>
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Deep Learning</strong>: CNNs, ResNet, RNN / LSTM / GRU</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>TensorFlow & Keras</strong>, Scikit-Learn</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Klassifikation, Regression, PCA, Random Forest</span>
+              </li>
+              <li class="skill-item">
+                <svg class="skill-check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Transformer-Grundlagen, NLP & Time-Series</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATENTE SECTION (User Highlight Requirement) -->
+    <section class="patents-section" id="patente">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Geistiges Eigentum & Innovation</span>
+          <h2 class="section-title">Erteilte <span class="gradient-text">Patente</span></h2>
+          <p class="section-desc">
+            Erfindungen im Bereich vernetzte Fahrzeugarchitekturen (Car2X/V2X), Hypervisor-Sicherheitsarchitektur 
+            und GNSS-unabhängige Echtzeit-Synchronisation.
+          </p>
+        </div>
+
+        <div class="patents-grid">
+          <!-- Patent 1 -->
+          <article class="patent-card">
+            <div>
+              <div class="patent-header">
+                <div class="patent-badge-group">
+                  <span class="patent-nr-badge">DE 10 2014 207 093 A1</span>
+                  <span class="patent-year-badge">Erteilt 2015</span>
+                </div>
+                <div class="patent-icon-wrapper" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+                    <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+                    <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="patent-title" style="margin-top: 1rem;">
+                Car2X-Kommunikation in USA und Europa mit einheitlichem Transmitter
+              </h3>
+
+              <p class="patent-abstract" style="margin-top: 0.75rem;">
+                Verfahren und Architektur zur länderübergreifenden Car2X-Funkkommunikation in unterschiedlichen Frequenzbändern 
+                mit vereinheitlichter Transmitter-Hardware ohne kostenintensive Mehrfachbestückung.
+              </p>
+            </div>
+
+            <div>
+              <div class="patent-tags" style="margin-bottom: 1rem;">
+                <span class="tech-tag">V2X / Car2X</span>
+                <span class="tech-tag">Transmitter Arch</span>
+                <span class="tech-tag">Automotive RF</span>
+              </div>
+
+              <div class="patent-footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Deutsches Patent- und Markenamt</span>
+                <a href="https://patents.google.com/patent/DE102014207093A1/de" target="_blank" rel="noopener noreferrer" class="patent-link">
+                  Auf Google Patents
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patent 2 -->
+          <article class="patent-card">
+            <div>
+              <div class="patent-header">
+                <div class="patent-badge-group">
+                  <span class="patent-nr-badge">DE 10 2015 200 801 A1</span>
+                  <span class="patent-year-badge">Erteilt 2015</span>
+                </div>
+                <div class="patent-icon-wrapper" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="patent-title" style="margin-top: 1rem;">
+                Elektronische Steuerungsvorrichtung mit Firewallpartition zum Schutz von gesicherten Schnittstellen
+              </h3>
+
+              <p class="patent-abstract" style="margin-top: 0.75rem;">
+                Hardware- und Hypervisor-Partitionierungsarchitektur mit isolierter Firewallpartition zum Schutz gesicherter 
+                Busschnittstellen gegen unbefugte Zugriffe in Multi-OS Embedded-Steuergeräten.
+              </p>
+            </div>
+
+            <div>
+              <div class="patent-tags" style="margin-bottom: 1rem;">
+                <span class="tech-tag">Hypervisor Security</span>
+                <span class="tech-tag">ECU Firewall</span>
+                <span class="tech-tag">Domain Separation</span>
+              </div>
+
+              <div class="patent-footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Deutsches Patent- und Markenamt</span>
+                <a href="https://patents.google.com/patent/DE102015200801A1/de" target="_blank" rel="noopener noreferrer" class="patent-link">
+                  Auf Google Patents
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patent 3 -->
+          <article class="patent-card">
+            <div>
+              <div class="patent-header">
+                <div class="patent-badge-group">
+                  <span class="patent-nr-badge">DE 10 2017 214 191 A1</span>
+                  <span class="patent-year-badge">Erteilt 2019</span>
+                </div>
+                <div class="patent-icon-wrapper" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="patent-title" style="margin-top: 1rem;">
+                Verfahren zum Ausgeben einer auf Satellitensignale synchronisierten Zeit mittels kontinuierlichem Zähler
+              </h3>
+
+              <p class="patent-abstract" style="margin-top: 0.75rem;">
+                Unterbrechungsfreie Bereitstellung hochpräziser Zeitinformationen in vernetzten Fahrzeugsystemen auch bei 
+                Signalverlust, Tunneldurchfahrten oder Abschattung der Satellitennavigation.
+              </p>
+            </div>
+
+            <div>
+              <div class="patent-tags" style="margin-bottom: 1rem;">
+                <span class="tech-tag">Zeitsynchronisation</span>
+                <span class="tech-tag">GNSS Ausfallsicherheit</span>
+                <span class="tech-tag">Echtzeitzähler</span>
+              </div>
+
+              <div class="patent-footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Deutsches Patent- und Markenamt</span>
+                <a href="https://patents.google.com/patent/DE102017214191A1/de" target="_blank" rel="noopener noreferrer" class="patent-link">
+                  Auf Google Patents
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patent 4 -->
+          <article class="patent-card">
+            <div>
+              <div class="patent-header">
+                <div class="patent-badge-group">
+                  <span class="patent-nr-badge">EP 3 610 588 A1</span>
+                  <span class="patent-year-badge">Erteilt 2020</span>
+                </div>
+                <div class="patent-icon-wrapper" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="patent-title" style="margin-top: 1rem;">
+                Fahrzeug-zu-X-Kommunikationssystem - Selbsttest
+              </h3>
+
+              <p class="patent-abstract" style="margin-top: 0.75rem;">
+                Automatisiertes Testverfahren und Architektur für den zyklischen Selbsttest von V2X-Sende- und 
+                Empfangskomponenten während des Fahrzeugbetriebs zur Gewährleistung höchster funktionaler Sicherheit.
+              </p>
+            </div>
+
+            <div>
+              <div class="patent-tags" style="margin-bottom: 1rem;">
+                <span class="tech-tag">Europäisches Patent</span>
+                <span class="tech-tag">V2X Selbsttest</span>
+                <span class="tech-tag">Funktionale Sicherheit</span>
+              </div>
+
+              <div class="patent-footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Europäisches Patentamt (EPA)</span>
+                <a href="https://patents.google.com/patent/EP3610588A1/de" target="_blank" rel="noopener noreferrer" class="patent-link">
+                  Auf Google Patents
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Patent 5 -->
+          <article class="patent-card">
+            <div>
+              <div class="patent-header">
+                <div class="patent-badge-group">
+                  <span class="patent-nr-badge">EP 3 138 304 A1</span>
+                  <span class="patent-year-badge">Erteilt 2020</span>
+                </div>
+                <div class="patent-icon-wrapper" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+
+              <h3 class="patent-title" style="margin-top: 1rem;">
+                Zeitstempelerzeugung ohne GNSS-Signal
+              </h3>
+
+              <p class="patent-abstract" style="margin-top: 0.75rem;">
+                Erzeugung manipulationssicherer und deterministischer Zeitstempel für sicherheitsrelevante V2X-Nachrichten 
+                im Falle des Ausfalls oder der Manipulation des GNSS-Satellitenempfängers.
+              </p>
+            </div>
+
+            <div>
+              <div class="patent-tags" style="margin-bottom: 1rem;">
+                <span class="tech-tag">Europäisches Patent</span>
+                <span class="tech-tag">Zeitstempel-Resilienz</span>
+                <span class="tech-tag">V2X Security</span>
+              </div>
+
+              <div class="patent-footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Europäisches Patentamt (EPA)</span>
+                <a href="https://patents.google.com/patent/EP3138304A1/de" target="_blank" rel="noopener noreferrer" class="patent-link">
+                  Auf Google Patents
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTE & GITHUB REPOSITORIES SECTION (User Highlight Requirement) -->
+    <section class="projects-section" id="projekte">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Code & Implementierung</span>
+          <h2 class="section-title">GitHub <span class="gradient-text">Repositories</span></h2>
+          <p class="section-desc">
+            Praxisnahe Implementierungen und Weiterbildungsprojekte in den Bereichen Deep Learning, Data Engineering Pipelines, 
+            Machine Learning und relationale Datenbanksysteme.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Alle Projekte</button>
+          <button class="filter-btn" data-filter="ai">Deep & Machine Learning</button>
+          <button class="filter-btn" data-filter="data">Data Engineering & Pipelines</button>
+          <button class="filter-btn" data-filter="sql">SQL & Datenbanken</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Beeswarm Detection -->
+          <article class="project-card" data-category="ai">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge">Deep Learning</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">Früherkennung des Schwarmverhaltens von Bienen</h3>
+              <span class="project-repo-name">NilsBauch/beeswarm_pre_detection</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Abschluss-Projektarbeit im Bereich Deep Learning. Einsatz von künstlichen neuronalen Netzen 
+                (CNN / RNN / LSTM) zur sensorischen und akustischen Früherkennung von Bienenschwärmen.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">CNN / LSTM</span>
+                <span class="tech-tag">Akustik-Sensorik</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/beeswarm_pre_detection" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Blutdruck Data Engineer -->
+          <article class="project-card" data-category="data">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge" style="background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.25);">Data Engineering</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">Blutdruck & Vitaldaten Data Pipeline</h3>
+              <span class="project-repo-name">NilsBauch/blutdruck_data_engineer_training</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Abschlussarbeit zur Qualifizierung zum Data Engineer. End-to-End ETL-Pipeline zur Erfassung, 
+                Bereinigung, Validierung und Überführung von Vitalwerten in moderne DWH-Modelle (Star-Schema).
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">ETL</span>
+                <span class="tech-tag">Data Warehouse</span>
+                <span class="tech-tag">Star Schema</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/blutdruck_data_engineer_training" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Diabetic Prediction -->
+          <article class="project-card" data-category="ai">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge">Machine Learning</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">Prädiktion von Diabetes-Risiken</h3>
+              <span class="project-repo-name">NilsBauch/ml_project_diabetic_prediction</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Machine Learning Projektarbeit zur Klassifikation und Risikoprognose. Beinhaltet explorative Datenanalyse (EDA), 
+                Feature-Engineering, Modellauswahl (Random Forest, SVM, Boosting) und Hyperparameter-Tuning.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">Jupyter</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Klassifikation</span>
+                <span class="tech-tag">Cross-Validation</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/ml_project_diabetic_prediction" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: CareSense AI -->
+          <article class="project-card" data-category="data">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.25);">Smart Healthcare</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">CareSense AI – Älter werden, smart betreut</h3>
+              <span class="project-repo-name">NilsBauch/care_sense_ai</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Repo zur Data-Engineering-Weiterbildung. Konzeption einer intelligenten Sensor- und Betreuungsdaten-Pipeline 
+                zur Unterstützung im häuslichen Lebensumfeld.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Sensor Pipelines</span>
+                <span class="tech-tag">IoT Data</span>
+                <span class="tech-tag">Assisted Living</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/care_sense_ai" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: SchiedsrichterDB -->
+          <article class="project-card" data-category="sql">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge" style="background: rgba(245, 158, 11, 0.12); color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.25);">SQL & RDBMS</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">Relationale Schiedsrichter-Datenbank</h3>
+              <span class="project-repo-name">NilsBauch/SchiedsrichterDB</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Projektarbeit zur Schulung "Relationale Datenbanken mit SQL". Konzeptionelles ERM, 3. Normalform / BCNF, 
+                komplexe SQL-Abfragen, Views, Prozeduren und Trigger in MS SQL Server / T-SQL.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">T-SQL</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">ERM / 3NF</span>
+                <span class="tech-tag">DDL / DCL</span>
+                <span class="tech-tag">Integrität</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/SchiedsrichterDB" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Zentrale Kontaktdatenbank -->
+          <article class="project-card" data-category="sql">
+            <div>
+              <div class="project-top">
+                <span class="project-category-badge" style="background: rgba(245, 158, 11, 0.12); color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.25);">SQL System</span>
+                <svg class="project-gh-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <h3 class="project-title" style="margin-top: 0.85rem;">Zentrale SQL Kontaktdatenbank</h3>
+              <span class="project-repo-name">NilsBauch/ZentraleSQLKontaktdatenbank</span>
+
+              <p class="project-desc" style="margin-top: 0.85rem;">
+                Strukturierte Datenbanklösung mit Fokus auf Datenkonsistenz, Rollenrechte, Auditierung 
+                und performante Abfragen im geschäftlichen Kontext.
+              </p>
+            </div>
+
+            <div>
+              <div class="project-tech-stack" style="margin-bottom: 1.25rem;">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">RDBMS</span>
+                <span class="tech-tag">Data Security</span>
+                <span class="tech-tag">Schema Design</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/NilsBauch/ZentraleSQLKontaktdatenbank" target="_blank" rel="noopener noreferrer" class="project-btn">
+                  <span>GitHub Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Full Profile Banner -->
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="https://github.com/NilsBauch" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            Alle Repositories auf GitHub ansehen (github.com/NilsBauch)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BERUFLICHER WERDEGANG SECTION (Timeline) -->
+    <section class="experience-section" id="werdegang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Karriere & Erfahrung</span>
+          <h2 class="section-title">Beruflicher <span class="gradient-text">Werdegang</span></h2>
+          <p class="section-desc">
+            24 Jahre kontinuierliche Weiterentwicklung und Verantwortung in führenden Unternehmen der Automobil-Zulieferindustrie.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Heute -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2026 – heute</span>
+              <h3 class="timeline-role">Transfermitarbeiter & Fachliche Qualifizierung</h3>
+              <div class="timeline-company">Bonner Wirtschafts Akademie GmbH</div>
+              <div class="timeline-details">
+                Aktive berufliche Neuorientierung mit intensivem Schwerpunkt auf Weiterbildung und Qualifizierung:
+                <ul class="timeline-bullets">
+                  <li>Vollzeit-Qualifizierungen in Data Engineering, Relationale Datenbanken (SQL), Machine Learning & Deep Learning bei alfatraining (jeweils mit ausgezeichnetem Erfolg).</li>
+                  <li>Vertiefung von KI-gestützten Architekturen, modernen Cloud-Pipelines und Datenmodellierungs-Standards.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Aumovio Bremssysteme -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">04/2024 – 12/2025</span>
+              <h3 class="timeline-role">Software Architekt – Elektronische Bremssysteme</h3>
+              <div class="timeline-company">Aumovio (vormals Continental Automotive, Siemens VDO)</div>
+              <div class="timeline-details">
+                Unterstützung bei der Etablierung vorwärtsgetriebener Software-Architekturmethoden in IBM Rhapsody für sicherheitskritische Bremssysteme:
+                <ul class="timeline-bullets">
+                  <li>Entwicklung eines Model-to-Model Transformators zur Konvertierung von IBM Rhapsody Modellen nach YAML.</li>
+                  <li>Entwicklung von Java-Plugins für IBM Rhapsody zum automatischen Import von AUTOSAR-Konfigurationsdaten (ARXML).</li>
+                  <li>Python-Skripte zur automatisierten Extraktion und Validierung von AUTOSAR-Informationen.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Aumovio TCU & V2X -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">05/2021 – 03/2024</span>
+              <h3 class="timeline-role">Software Architekt – Telematics Control Unit (TCU) & V2X</h3>
+              <div class="timeline-company">Aumovio / Continental Automotive</div>
+              <div class="timeline-details">
+                Integration eines V2X-Protokollstacks und V2X-Applikationen in eine Telematics Control Unit basierend auf Embedded Linux:
+                <ul class="timeline-bullets">
+                  <li>Erstellung und Management von Software-Anforderungen in DoorsNG inkl. lückenloser Traceability zur Architektur.</li>
+                  <li>Modellierung der Software-Architektur in IBM Rhapsody und Vorbereitung auf das SPICE-Assessment.</li>
+                  <li>Fachliche Koordination von Architektur-Arbeitspaketen in einem internationalen Team (China).</li>
+                  <li>Entwicklung performanter C++ Module zum Datenaustausch zwischen Embedded Linux System und Prüfstand-PC.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Ernennung Experte & V2X Hypervisor -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">01/2014 – 04/2021 &bull; Experte 05/2019</span>
+              <h3 class="timeline-role">Software Architekt & Ernanter Experte: Hypervisor Architecture</h3>
+              <div class="timeline-company">Continental Automotive</div>
+              <div class="timeline-details">
+                Entwicklung eines V2X-Onebox-Systems mit V2X-Kommunikationsstack, AUTOSAR Treibern und Hypervisor:
+                <ul class="timeline-bullets">
+                  <li><strong>Offizielle Ernennung zum Experten (05/2019):</strong> <em>“Software and functional Architecture for Hypervisor”</em>.</li>
+                  <li>Aufsetzen und Konfiguration des PikeOS Hypervisors zur Kommunikation zwischen verschiedenen Gast-Betriebssystemen (AUTOSAR, PikeOS native, Posix).</li>
+                  <li>Software-FMEA und Cybersecurity-TARA zur Identifikation und Minimierung technischer Risiken.</li>
+                  <li>Entwicklung von SysML Harmony Architekturmethoden und Metamodellen für internationale Teams (Rumänien).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Frühere Stationen (2001-2013) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">01/2001 – 12/2013</span>
+              <h3 class="timeline-role">Software Entwickler, Integrator & Projektleiter</h3>
+              <div class="timeline-company">Continental Automotive / Siemens VDO</div>
+              <div class="timeline-details">
+                Langjährige Erfahrung in Sensorik-, Gateway- und Netzwerkserienprojekten:
+                <ul class="timeline-bullets">
+                  <li><strong>2010 – 2013:</strong> Machbarkeitsstudien & Sensorikmodule für magnetische Lenkwinkel- und Positions-Sensorik (V-Modell).</li>
+                  <li><strong>2008 – 2009:</strong> Software-Projektmanagement & Serienentwicklung Inertial-Sensorik (Ford, FIAT; internationales Team Ungarn).</li>
+                  <li><strong>2004 – 2007:</strong> Vernetzungs- & Diagnosegateway für Volkswagen (PQ35 Golf); Vector CAN Stacks, OSEK RTOS.</li>
+                  <li><strong>2001 – 2003:</strong> Zentrales Diagnosegateway für Mercedes-Benz (C-Klasse BR211); Resident Engineer in Sindelfingen zum Serienanlauf.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serienprojekte Showcase Strip -->
+        <div class="series-projects-box">
+          <h3 class="series-title">Serienprojekte der Automobilindustrie</h3>
+          <div class="series-grid">
+            <div class="series-item">
+              <span class="series-oem">Mercedes-Benz</span>
+              <span class="series-name">Zentrales Gateway (ZGW)</span>
+              <span class="series-year">Baureihe 211 (C-Klasse) &bull; 2002</span>
+            </div>
+            <div class="series-item">
+              <span class="series-oem">Volkswagen</span>
+              <span class="series-name">Vernetzungs Gateway (VGW)</span>
+              <span class="series-year">Plattform PQ35 (Golf) &bull; 2006</span>
+            </div>
+            <div class="series-item">
+              <span class="series-oem">Ford</span>
+              <span class="series-name">Inertial Sensor Serienprojekt</span>
+              <span class="series-year">Inertial-Sensorik &bull; 2008</span>
+            </div>
+            <div class="series-item">
+              <span class="series-oem">FIAT</span>
+              <span class="series-name">Inertial Sensor Serienprojekt</span>
+              <span class="series-year">Inertial-Sensorik &bull; 2009</span>
+            </div>
+            <div class="series-item">
+              <span class="series-oem">Mercedes (China)</span>
+              <span class="series-name">Telematic Control Unit (TCU)</span>
+              <span class="series-year">Telematik & Vernetzung &bull; 2009</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZERTIFIKATE & AUSBILDUNG SECTION -->
+    <section class="certificates-section" id="zertifikate">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Qualifikation & Zertifikate</span>
+          <h2 class="section-title">Ausbildung & <span class="gradient-text">Zertifizierungen</span></h2>
+          <p class="section-desc">
+            Fundierte akademische Ausbildung als Diplom-Ingenieur und zertifizierte Weiterbildungen mit Spitzennoten.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Diplom -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Diplom-Ingenieur (FH) Elektrotechnik</h3>
+                  <div class="cert-issuer">Fachhochschule Wiesbaden &bull; Abschluss 11/2001</div>
+                </div>
+                <span class="cert-badge">Note 1,9</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                <strong>Fachbereich Informationstechnologie und Elektrotechnik:</strong> Schwerpunkt Nachrichtentechnik. 
+                <br><em>Diplomarbeit:</em> Definition & Entwicklung einer gegen Spannungsausfall gesicherten Applikationsschnittstelle zur Ansteuerung des EEPROMs im Motorola µC MCS912DP256 für das Betriebssystem OSEK.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Akademischer Grad</span>
+              <span>1997 – 2001</span>
+            </div>
+          </article>
+
+          <!-- alfatraining: Data Engineer -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Zertifizierter Data Engineer</h3>
+                  <div class="cert-issuer">alfatraining Bildungszentrum &bull; 160 UE</div>
+                </div>
+                <span class="cert-badge">Mit Auszeichnung</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                Business Intelligence Architekturen, Data Warehousing (Star, Snowflake, Galaxy Schema), Data Vault 2.0 (Hubs, Links, Satellites), ETL-Strecken, Cleansing, Harmonisierung, Datenmodellierung (ERM, UML) & Abschluss-Projektarbeit.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Zertifikat Nr. 186281</span>
+              <span>März – April 2026</span>
+            </div>
+          </article>
+
+          <!-- alfatraining: Deep Learning -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Zertifikat Deep Learning</h3>
+                  <div class="cert-issuer">alfatraining Bildungszentrum &bull; 160 UE</div>
+                </div>
+                <span class="cert-badge">Mit Auszeichnung</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                Neuronale Netze, Backpropagation, CNN (Convolutional Neural Networks, Transfer Learning, ResNet), RNN (LSTM, GRU), Transformer Architekturen, NLP, GANs, Hyperparameter-Tuning & TensorBoard.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Zertifikat Nr. 189840</span>
+              <span>Mai – Juni 2026</span>
+            </div>
+          </article>
+
+          <!-- alfatraining: Machine Learning -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Zertifikat Machine Learning</h3>
+                  <div class="cert-issuer">alfatraining Bildungszentrum &bull; 160 UE</div>
+                </div>
+                <span class="cert-badge">Mit Auszeichnung</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                Überwachtes & Unüberwachtes Lernen: Lineare Modelle, Random Forest, Gradient Boosting, Support Vector Machines (SVM), k-Means, PCA, t-SNE, Kreuzvalidierung, Grid Search & Modell-Evaluation.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Zertifikat Nr. 189057</span>
+              <span>April – Mai 2026</span>
+            </div>
+          </article>
+
+          <!-- alfatraining: Relationale Datenbanken SQL -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Relationale Datenbanken mit SQL</h3>
+                  <div class="cert-issuer">alfatraining Bildungszentrum &bull; 160 UE</div>
+                </div>
+                <span class="cert-badge">Mit Auszeichnung</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                RDBMS-Architektur, Normalisierung (BCNF), ERM-Entwurf, Physisches Datenbankdesign in MS SQL Server / SSMS, komplexe Abfragen, DDL / DCL, Transaktionsmanagement und Datensicherheit.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Zertifikat Nr. 182688</span>
+              <span>Februar – März 2026</span>
+            </div>
+          </article>
+
+          <!-- SAFe for Architects -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">SAFe for Architects</h3>
+                  <div class="cert-issuer">Scaled Agile / Software Academy</div>
+                </div>
+                <span class="cert-badge" style="background: rgba(59, 130, 246, 0.12); color: var(--accent-blue); border-color: rgba(59, 130, 246, 0.25);">Agile Arch</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                Architekturführung in skalierten agilen Umgebungen (SAFe). Kontinuierliche Wertstrom-Lieferung, Architektur-Roadmaps, Enabler-Storys und Ausrichtung auf Business-Ziele.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Software Academy</span>
+              <span>April 2023</span>
+            </div>
+          </article>
+
+          <!-- Continental Trainings -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Automotive Software Trainings</h3>
+                  <div class="cert-issuer">Continental Software Academy</div>
+                </div>
+                <span class="cert-badge" style="background: rgba(99, 102, 241, 0.12); color: var(--accent-indigo); border-color: rgba(99, 102, 241, 0.25);">Academy</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                &bull; <strong>Python Grundlagenworkshop</strong> (03/2025)<br>
+                &bull; <strong>REST APIs lernen</strong> (02/2025)<br>
+                &bull; <strong>Jenkins CI/CD Grundkurs</strong> (02/2025)<br>
+                &bull; <strong>Objektorientierte Programmierung C++</strong> (04/2018)
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Weiterbildungen</span>
+              <span>2018 – 2025</span>
+            </div>
+          </article>
+
+          <!-- Berufsausbildung Telekom -->
+          <article class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div>
+                  <h3 class="cert-title">Kommunikationselektroniker</h3>
+                  <div class="cert-issuer">Deutsche Bundespost Telekom</div>
+                </div>
+                <span class="cert-badge" style="background: rgba(100, 116, 139, 0.12); color: var(--text-secondary); border-color: rgba(100, 116, 139, 0.25);">IHK Abschluss</span>
+              </div>
+              <p class="cert-modules" style="margin-top: 1rem;">
+                Fachrichtung Telekommunikationstechnik. Solide elektrotechnische und nachrichtentechnische Grundausbildung in Signalübertragung, Messtechnik und Leitungsnetzen.
+              </p>
+            </div>
+            <div class="cert-footer">
+              <span>Berufsausbildung</span>
+              <span>1991 – 1995</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT SECTION -->
+    <section class="contact-section" id="kontakt">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-info">
+            <span class="section-badge">Direkter Austausch</span>
+            <h2 class="contact-title">Lassen Sie uns <span class="gradient-text">vernetzen</span></h2>
+            <p class="contact-desc">
+              Haben Sie Fragen zu meiner architektonischen Erfahrung, meinen Patenten oder suchen Sie 
+              einen Senior Embedded Software Architekten für anspruchsvolle Projekte? 
+              Ich freue mich auf Ihre Kontaktaufnahme.
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="contact-method-left">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <div class="contact-method-title">E-Mail</div>
+                    <a href="mailto:nils.bauch@yahoo.de" class="contact-method-val">nils.bauch@yahoo.de</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="nils.bauch@yahoo.de" title="E-Mail in die Zwischenablage kopieren" aria-label="E-Mail kopieren">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Mobil -->
+              <div class="contact-method-item">
+                <div class="contact-method-left">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                  <div>
+                    <div class="contact-method-title">Mobil</div>
+                    <a href="tel:+4915201914228" class="contact-method-val">+49 1520 1914228</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+4915201914228" title="Telefonnummer kopieren" aria-label="Mobilnummer kopieren">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Festnetz -->
+              <div class="contact-method-item">
+                <div class="contact-method-left">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <div>
+                    <div class="contact-method-title">Festnetz</div>
+                    <a href="tel:+496126957928" class="contact-method-val">+49 6126 957928</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+496126957928" title="Festnetznummer kopieren" aria-label="Festnetznummer kopieren">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Standort -->
+              <div class="contact-method-item">
+                <div class="contact-method-left">
+                  <svg class="contact-method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <div class="contact-method-title">Standort</div>
+                    <span class="contact-method-val">Kastanienweg 24, 65510 Idstein</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions & Download -->
+          <div class="contact-quick-actions">
+            <div class="action-highlight-box">
+              <h3 class="action-highlight-title">Direkte Aktionen</h3>
+              <p class="action-highlight-desc">
+                Sie können meine Kontaktdaten direkt als digitale Visitenkarte (vCard) herunterladen oder mir eine E-Mail senden.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.5rem;">
+                <button id="download-vcard" class="btn btn-primary" style="width: 100%;">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Visitenkarte herunterladen (vCard .vcf)
+                </button>
+
+                <a href="mailto:nils.bauch@yahoo.de?subject=Anfrage%20via%20Landing%20Page" class="btn btn-secondary" style="width: 100%;">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  E-Mail im Mailprogramm öffnen
+                </a>
+
+                <a href="./lebenslauf/LebenslaufNilsBauch.pdf" target="_blank" download="Lebenslauf_Nils_Bauch.pdf" class="btn btn-secondary" style="width: 100%;">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  Lebenslauf als PDF herunterladen
+                </a>
+
+                <a href="https://github.com/NilsBauch" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  GitHub Profil besuchen
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <p>&copy; <span id="current-year">2026</span> Dipl.-Ing. (FH) Nils Bauch &bull; Alle Rechte vorbehalten.</p>
+        <p style="font-size: 0.75rem; margin-top: 0.25rem;">Bereit für GitHub Pages Hosting gem. <a href="https://docs.github.com/de/pages/quickstart" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: none;">GitHub Dokumentation</a>.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#hero" class="footer-link">Nach oben</a></li>
+        <li><a href="#patente" class="footer-link">Patente</a></li>
+        <li><a href="#projekte" class="footer-link">GitHub Repos</a></li>
+        <li><a href="https://github.com/NilsBauch" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profil</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    In die Zwischenablage kopiert!
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
