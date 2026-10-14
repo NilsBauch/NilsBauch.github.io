@@ -21,7 +21,13 @@ function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle');
   if (!toggleBtn) return;
 
-  const savedTheme = localStorage.getItem('nb_theme') || 'light';
+  // Default to friendly, positive light mode for all visitors
+  let savedTheme = localStorage.getItem('nb_theme_v2');
+  if (!savedTheme) {
+    savedTheme = 'light';
+    localStorage.setItem('nb_theme_v2', 'light');
+    localStorage.removeItem('nb_theme');
+  }
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   toggleBtn.addEventListener('click', () => {
@@ -29,7 +35,7 @@ function initTheme() {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     
     document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('nb_theme', newTheme);
+    localStorage.setItem('nb_theme_v2', newTheme);
   });
 }
 
