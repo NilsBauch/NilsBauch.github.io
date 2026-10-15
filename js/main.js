@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initCounters();
   initClipboard();
-  initVCard();
 });
 
 /* ==========================================================================
@@ -321,42 +320,4 @@ function initClipboard() {
       toast.classList.remove('show');
     }, 2800);
   }
-}
-
-/* ==========================================================================
-   7. DYNAMIC VCARD GENERATOR
-   ========================================================================== */
-function initVCard() {
-  const vcardBtn = document.getElementById('download-vcard');
-  if (!vcardBtn) return;
-
-  vcardBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const vCardData = [
-      'BEGIN:VCARD',
-      'VERSION:3.0',
-      'N:Bauch;Nils;;Dipl.-Ing. (FH);',
-      'FN:Dipl.-Ing. (FH) Nils Bauch',
-      'TITLE:Embedded Software Architekt & AI/Data Specialist',
-      'ORG:Aumovio / Freelance',
-      'TEL;TYPE=CELL:+49 1520 1914228',
-      'TEL;TYPE=WORK,VOICE:+49 6126 957928',
-      'EMAIL;TYPE=INTERNET,HOME:nils.bauch@yahoo.de',
-      'ADR;TYPE=HOME:;;Kastanienweg 24;Idstein;;65510;Germany',
-      'URL:https://github.com/NilsBauch',
-      'NOTE:Embedded Software Architekt mit 24 Jahren Automotive-Erfahrung und 5 Patenten.',
-      'END:VCARD'
-    ].join('\r\n');
-
-    const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', 'Nils_Bauch.vcf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  });
 }

@@ -25,9 +25,8 @@ Die Seite wurde vollständig mit modernem HTML5, CSS3 (Vanilla Design System) un
 - **Werdegang & Meilensteine**: Interaktive Zeitleiste über 24+ Jahre Erfahrung (Aumovio, Continental Automotive, Siemens VDO) inklusive aller Serienprojekte (Mercedes-Benz C-Klasse, VW Golf, Ford, FIAT, China TCU).
 - **Zertifikate & Qualifikationen**: Akademischer Diplom-Ingenieur Abschluss (Note 1,9), alfatraining-Abschlüsse (*mit Auszeichnung* in Data Engineering, Deep Learning, Machine Learning, SQL) sowie SAFe for Architects und Continental Academy Zertifikate.
 - **Interaktive Kontaktmöglichkeiten**:
-  - 1-Click Zwischenablage für E-Mail und Rufnummern mit visueller Toast-Benachrichtigung.
-  - Dynamischer **vCard (.vcf) Generator** zum direkten Speichern im Adressbuch.
-  - Direkter Downloadlink des Original-Lebenslaufs (`LebenslaufNilsBauch.pdf`).
+  - 1-Click Zwischenablage für E-Mail (`nils.bauch@yahoo.de`) mit visueller Toast-Benachrichtigung.
+  - Direkte E-Mail-Verlinkung (ausführlicher Lebenslauf und Referenzen auf Anfrage per E-Mail).
 - **Dark / Light Mode**: Elegantes Theme-Switching mit Speicherfunktion (`localStorage`).
 - **Interaktiver Canvas-Hintergrund**: Reaktive Partikelanimation, die dezent auf Mausbewegungen reagiert.
 
